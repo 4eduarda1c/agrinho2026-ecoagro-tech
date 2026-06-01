@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro Tech - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>EcoAgro<span>Tech</span></h1>
+            <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre">
+            <h2>O Grande Desafio</h2>
+            <p>Como alimentar uma população crescente e proteger os recursos naturais? O segredo está no equilíbrio. Através da tecnologia e de práticas conscientes, o agro se fortalece enquanto preserva o futuro.</p>
+        </section>
+
+        <section id="praticas">
+            <h2>Pilares do Agro Sustentável</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar espécies de plantas na mesma área preserva os nutrientes do solo e reduz pragas sem o uso excessivo de químicos.</p>
+                </div>
+                <div class="card">
+                    <h3>Irrigação Gota a Gota</h3>
+                    <p>Tecnologia que direciona a água direto para a raiz da planta, evitando o desperdício em até 60%.</p>
+                </div>
+                <div class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>O uso de painéis solares e biomassa nas fazendas reduz a pegada de carbono drasticamente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador">
+            <h2>Simulador de Impacto Sustentável</h2>
+            <p>Escolha as práticas que deseja adotar na sua fazenda e veja a mágica acontecer!</p>
+            
+            <div class="simulador-box">
+                <div class="opcoes">
+                    <label>
+                        <input type="checkbox" id="chkIrrigacao" value="40"> Irrigação Inteligente
+                    </label>
+                    <label>
+                        <input type="checkbox" id="chkSolar" value="30"> Energia Solar
+                    </label>
+                    <label>
+                        <input type="checkbox" id="chkFloresta" value="50"> Plantio Direto / Agrofloresta
+                    </label>
+                </div>
+
+                <button onclick="calcularImpacto()">Calcular Sustentabilidade</button>
+
+                <div id="resultado" class="hidden">
+                    <h3>Resultado da sua Fazenda:</h3>
+                    <p id="textoResultado"></p>
+                    <div class="barra-progresso">
+                        <div id="progressoSustentavel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EcoAgro Tech - Desenvolvido para o Concurso Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
